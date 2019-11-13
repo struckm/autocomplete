@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css';
 import AutoCompleteText from './AutoCompleteText';
-
+import countries from './countries';
 
 function App() {
   return (
     <div className="App">
-      <AutoCompleteText />
+        <div className="App-Component">
+          <AutoCompleteText items={countries} />
+        </div>
     </div>
   );
 }
