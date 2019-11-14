@@ -1,6 +1,6 @@
 .AutoCompleteText {
     width: 100%;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -23,7 +23,16 @@
     text-align: left;
     margin: 0;
     padding: 0;
-    border-top: 1px solid grey;
+    /* border-top: 1px solid grey; */
+    /* position: fixed; */
+    flex: auto;
+    /* border: 1px solid grey; */
+    /* box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18); */
+    border-top: none;
+    /* top: 0;
+    left: 0;
+    right: 0; */
+    background-color: white;
 }
 
 .AutoComplete ul::before {
@@ -37,4 +46,50 @@
 
 .AutoCompleteText li:hover {
     background-color: rgba(128, 128, 128, 0.20);
+}
+
+.AutoCompleteTextContainer {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 0 0 1px rgba(0,0,0,0.08);
+    border: 0;
+    /* border-radius: 0 0 24px 24px; */
+    box-shadow: 0 4px 6px 0 rgba(32,33,36,0.28);
+    padding-bottom: 4px;
+    overflow: hidden;
+}
+
+.AutoCompleteTextContainer ul {
+    list-style-type: none;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    /* border-top: 1px solid grey; */
+    /* position: fixed; */
+    /* flex: auto; */
+    /* border: 1px solid grey; */
+    /* box-shadow: 0 0 0 1px rgba(0,0,0,.1), 0 2px 4px 1px rgba(0,0,0,.18); */
+    border-top: none;
+    /* top: 0;
+    left: 0;
+    right: 0; */
+    background-color: white;
+    margin-left: 5px;
+    border: 1px solid grey;
+}
+
+.container {
+    position: relative;
+    text-align: left;
+    margin-top: -1px;
+    z-index: 3;
+    cursor: default;
+    -webkit-user-select: none;
 }

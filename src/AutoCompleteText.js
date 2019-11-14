@@ -46,9 +46,15 @@ export default class AutoCompleteText extends React.Component {
     render() {
         const { text } = this.state;
         return (
-            <div className="AutoCompleteText">
-                <input value={text} type="text" onChange={this.onTextChanged} />
-                {this.renderSuggestions()}
+            <div>
+                <div className="AutoCompleteText">
+                    <input value={text} type="text" onChange={this.onTextChanged} />
+                </div>
+                <div className="container">
+                    <div className="AutoCompleteTextContainer">
+                        {this.renderSuggestions()}
+                    </div>
+                </div>
             </div>
         )
     }
